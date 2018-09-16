@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.3s linear;
 }
 *::after,*::before{
     box-sizing: border-box;
@@ -12,12 +13,26 @@ body{
     flex-direction: column;
 }
 .code-wrapper{
-    padding: 10px;
+  flex:1;
+  height: 50%;
+  padding: 10px;
 }
-.code-wrapper,.preview-wrapper{
-    height: 50%;
-    flex: 1;
+.preview-wrapper{
+  flex: 1;
+  height: 50%;
 }
+.wrapper{
+  width: 100%;
+  height: 165px;
+  position: relative;
+}
+.preview{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
 #code{
     height: 100%;
     overflow: hidden;
