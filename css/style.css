@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+.code-wrapper{
+    padding: 10px;
+}
+.code-wrapper,.preview-wrapper{
+    height: 50%;
+    flex: 1;
+}
+#code{
+    height: 100%;
+    overflow: hidden;
+}
+.actions{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+.actions>button{
+    padding: 10px;
+    background: #ddd;
+    border: none;
+    outline: none;
+    margin: 8px;
+    cursor: pointer;
+}
+.actions>button.active{
+    box-shadow: 1px 1px 1px rgba(0,0,0,.7)
+}
